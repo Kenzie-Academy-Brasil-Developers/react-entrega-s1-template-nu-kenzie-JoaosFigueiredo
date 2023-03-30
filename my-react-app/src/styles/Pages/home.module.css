@@ -1,0 +1,55 @@
+@media (min-width: 850px) {
+    main{
+        display: flex;
+        gap: 3rem;
+        padding-top: 3rem;
+    }
+
+    header > img {
+        padding: 1rem 0rem;
+        margin-left: 100px;
+    }
+
+    main{
+        margin: 0 100px;
+    }
+
+    form {
+        gap: 1rem;
+    }
+
+    .formContainer {
+        height: 55vh;
+    }
+
+    .formBalanceWrapper {
+        height: 80vh;
+        width: 30vw;
+    }
+
+    .summaryWrapper {
+        width: 55vw;
+        padding: 0;
+    }
+
+    li {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .transactionCardValue {
+        align-items: flex-end;
+    }
+
+    input {
+        height: 4rem;
+    }
+
+    select {
+        height: 4rem;
+    }
+
+    .buttons {
+        height: 4rem;
+    }
+}

@@ -1,0 +1,23 @@
+select:focus{
+    border-color: var(--grey-four);
+}
+
+option{
+    background-color: var(--grey-one);
+    color: var(--grey-three);
+}
+
+option:hover{
+    background-color: var(--grey-two);
+    color: var(--grey-four);
+}
+
+.valueInput{
+    color: var(--grey-three);
+    background-color: var(--grey-one);
+}
+
+.valueInput:focus{
+    color: var(--grey-four);
+    border-color: var(--grey-one);
+}

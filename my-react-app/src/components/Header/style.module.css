@@ -1,0 +1,19 @@
+header > img {
+    padding: 1rem 1.5rem;
+}
+
+header {
+    box-shadow: 0px 1px 6px #999;
+    display: flex;
+    align-items: center;
+}
+
+.valueInput{
+    color: var(--grey-three);
+    background-color: var(--grey-one);
+}
+
+.valueInput:focus{
+    color: var(--grey-four);
+    border-color: var(--grey-one);
+}

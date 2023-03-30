@@ -12,12 +12,14 @@
     font-weight: 700;
     font-size: 1.375rem;
     line-height: 2,125rem;
+    color: var(--grey-three);
 }
 
 .title-three{
     font-weight: 700;
     font-size: 1rem;
     line-height: 1.875rem;
+    color: var(--grey-four);
 }
 
 .title-four{

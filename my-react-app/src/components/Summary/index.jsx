@@ -1,17 +1,17 @@
 import { TransactionCard } from "./TransactionCard"
 
-export const TransactionsSummary = ({ listTransactions, removeNote }) => {
+export const Summary = ({ listTransactions, removeNote }) => {
     return(
         <>
-        <h2>Resumo financeiro</h2>
+        <h2 className="title-three" >Resumo financeiro</h2>
         {listTransactions.length > 0 ? (
             <ul>
-            {listTransactions.map((transaction) => {
-                return <TransactionCard key={transaction.id} transaction = {transaction} removeNote = {removeNote} />
-            })}
-        </ul> 
+                {listTransactions.map((transaction) => {
+                    return <TransactionCard key={transaction.id} transaction = {transaction} removeNote = {removeNote} />
+                })}
+            </ul> 
         ):(
-            <h1>Você ainda não possui nenhum lançamento</h1>
+            <h1 className="title-two" >Você ainda não possui nenhum lançamento</h1>
         )}
         </>
     )

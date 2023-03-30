@@ -1,0 +1,20 @@
+.balance{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+    border: solid;
+    border-width: 0.1rem;
+    border-radius: 0.2rem;
+    border-color: var(--grey-two);
+    padding: 1.3rem;
+}
+
+.valueWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.totalValue {
+    color: var(--color-primary);
+}

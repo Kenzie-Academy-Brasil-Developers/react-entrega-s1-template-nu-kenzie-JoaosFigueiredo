@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import { Header } from './components/Header'
 import { TransactionForm } from './components/TransactionForm'
-import { TransactionsSummary } from './components/Summary'
-import { AccountBalance } from './components/Balance'
+import { Summary } from './components/Summary'
+import { Balance } from './components/Balance'
 import { v4 as uuidv4 } from 'uuid'
+import "./styles/index.css"
 
 function App() {
-  const [count, setCount] = useState(0)
   const [listTransactions, storeTransactions] = useState([]);
   const valueSum = listTransactions.reduce((previousValue, element) => {
     const stringToNumber = parseFloat(element.value)
@@ -33,12 +33,12 @@ function App() {
     <div>
       <Header/>
       <main>
-        <div>
+        <div className='formBalanceWrapper'>
           <TransactionForm addNewTransaction = {addNewTransaction}/>
-          <AccountBalance valueSum = {valueSum}/>
+          <Balance listTransactions={listTransactions} valueSum = {valueSum}/>
         </div>
-        <div>
-          <TransactionsSummary listTransactions={listTransactions} removeNote = {removeNote}/>
+        <div className="summaryWrapper" >
+          < Summary listTransactions={listTransactions} removeNote = {removeNote}/>
         </div>
       </main>
     </div>

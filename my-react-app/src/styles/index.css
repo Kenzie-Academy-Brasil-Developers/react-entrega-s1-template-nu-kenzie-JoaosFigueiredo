@@ -1,0 +1,11 @@
+@import "./button.css";
+@import "./globalStyles.css";
+@import "./form.css";
+@import "./reset.css";
+@import "./tiphography.css";
+@import "./inputs.css";
+@import "../components/Header/style.module.css";
+@import "../components/TransactionForm/style.module.css";
+@import "../components/Summary/TransactionCard/style.modules.css";
+@import "../components/Balance/style.modules.css";
+@import "../styles/Pages/home.module.css";
