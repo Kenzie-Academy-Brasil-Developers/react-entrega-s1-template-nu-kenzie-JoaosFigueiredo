@@ -16,10 +16,7 @@
 
     form {
         gap: 1rem;
-    }
-
-    .formContainer {
-        height: 55vh;
+        height: 100%;
     }
 
     .formBalanceWrapper {
@@ -42,14 +39,10 @@
     }
 
     input {
-        height: 4rem;
-    }
-
-    select {
-        height: 4rem;
+        height: 10%;
     }
 
     .buttons {
-        height: 4rem;
+        height: 6vh;
     }
 }

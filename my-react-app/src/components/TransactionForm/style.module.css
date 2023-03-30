@@ -25,3 +25,7 @@ select{
     padding: 0 1rem;
     border: none;
 }
+
+.bodyText {
+    color: var(--grey-three);
+}
